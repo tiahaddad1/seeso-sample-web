@@ -1,15 +1,33 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./drawing.css">
+    <script src="index.js" defer></script>
+    <title>Seeso Dummy Project</title>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>SeeSo Web Sample</title>
-</head>
-
-<body>
-  <canvas id="output" style="position: fixed;"></canvas>
-  <h2 id="gazeInfo" style="text-align: center;z-index: -1"></h2>
-  <script src="index.js"></script>
-</body>
-
+  <body onload="alert('Please pick a color to start drawing!')"></body>
+    <section>
+      <div class="tool" id="tool">
+        <label>Pick a Color:</label>
+        <input id="stroke" name="stroke" type="color" />
+        <label for="penWidth">Pen Width:</label>
+        <input id="penWidth" name="penWidth" type="number" value="8" />
+        <button id="clearBoard">Clear Board</button>
+        <div id="gazeInfoA"></div>
+        <label class="timerAll">Record:</label>
+        <button id="startTimer">Start Timer</button> 
+        <button id="stopTimer">End Timer</button> 
+        <button id="calculate">Calculate</button> 
+        <div id="timeSol"></div>
+      </div>
+      <div class="drawing-board">
+        <button id="downloadCSV">Download Data in CSV file</button> 
+        <canvas class="drawing-board" id="drawing-board"></canvas>
+      </div>
+    </section>
+    <section class="seeso">
+    </section>
+  </body>
 </html>

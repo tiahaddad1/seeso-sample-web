@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  color: white;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  width: 100vw;
+}
+.tool {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  background-color: #f3bfbe;
+  /* overflow-y:scroll; */
+}
+.tool * {
+  margin-bottom: 10px;
+}
+
+.tool label {
+  font-size: 15px;
+  color: black;
+  font-family: "Verdana";
+  font-weight: bold;
+  margin-top: 30px;
+}
+label.custom {
+  color: black;
+  font-size: large;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.tool input {
+  width: 50%;
+}
+
+.tool button {
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 4px;
+  color: black;
+  padding: 15px;
+  font-family: "Verdana";
+  font-weight: bold;
+  width: 80%;
+  margin-top: 30px;
+  font-size: medium;
+}
+#clearBoard {
+  color: #d98695;
+}
+#gazeInfoA {
+  color: black;
+  font-family: "Verdana";
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+}
+#startTimer {
+  margin-top: 0;
+  color: green;
+}
+#stopTimer {
+  margin-top: 0;
+  color: red;
+}
+#calculate {
+  margin-top: 0;
+  color: darkblue;
+}
+.timerAll {
+  margin-bottom: 5;
+}
+
+#downloadCSV {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 5px 2px rgba(166, 175, 195, 0.25);
+  border: 0 solid #e2e8f0;
+  border-radius: 1.5rem;
+  color: #0d172a;
+  font-family: "Basier circle", system-ui, "Segoe UI", "Helvetica Neue", Arial,
+    "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  padding: 1rem 1.6rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+}

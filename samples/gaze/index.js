@@ -5,7 +5,7 @@ import showGaze from "../showGaze";
 // npm module
 import EasySeeSo from 'seeso/easy-seeso';
 
-const licenseKey = 'YOUR_LICENSE_KEY_HERE'; // Issue license key! -> https://console.seeso.io
+const licenseKey = 'dev_at5kfm9lsdiufctzmov49om5doqtdzh09krodf11'; // Issue license key! -> https://console.seeso.io
 
 // gaze callback.
 function onGaze(gazeInfo) {
@@ -31,7 +31,7 @@ async function main() {
 
   await seeSo.init(licenseKey,
       () => {
-      seeSo.setMonitorSize(16);
+      seeSo.setMonitorSize(13);
       seeSo.setFaceDistance(50);
       seeSo.setCameraPosition(window.outerWidth / 2, true);
       seeSo.startTracking(onGaze, onDebug)

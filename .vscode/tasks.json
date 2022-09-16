@@ -1,0 +1,38 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "install",
+      "group": "clean",
+      "problemMatcher": [],
+      "label": "npm: install",
+      "detail": "install dependencies from package"
+    },
+    {
+      "type": "npm",
+      "script": "calibration",
+      "problemMatcher": [],
+      "label": "npm: calibration",
+      "detail": "node devServer samples/calibration/index.html 8082",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "type": "npm",
+      "script": "gaze",
+      "problemMatcher": [],
+      "label": "npm: gaze",
+      "detail": "cross-env NODE_ENV=development node devServer.js samples/gaze/index.html 8082"
+    },
+    {
+      "type": "npm",
+      "script": "gaze-minjs",
+      "problemMatcher": [],
+      "label": "npm: gaze-minjs",
+      "detail": "cross-env NODE_ENV=development node devServer.js samples/gaze-minjs/index.html 8082"
+    }
+  ]
+}

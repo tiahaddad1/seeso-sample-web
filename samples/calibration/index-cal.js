@@ -2,10 +2,10 @@ import 'regenerator-runtime/runtime';
 import EasySeeSo from 'seeso/easy-seeso';
 import showGaze from "../showGaze";
 
-const licenseKey = 'INPUT_YOUR_KEY';
+const licenseKey = 'dev_at5kfm9lsdiufctzmov49om5doqtdzh09krodf11';
 
 function onClickCalibrationBtn(){
-    const userId = 'YOUR_USER_ID'; // ex) 5e9easf293
+    const userId = 'k1910052'; // ex) 5e9easf293
     const redirectUrl = 'http://localhost:8082';
     const calibrationPoint = 5;
     EasySeeSo.openCalibrationPage(licenseKey, userId, redirectUrl, calibrationPoint);
